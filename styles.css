@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@300;400;500&family=Roboto+Condensed&family=Roboto+Flex:opsz,wght@8..144,500&family=Roboto:wght@900&family=Tilt+Warp&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary:#09090c;
+    --primary-dark:#010101;
+    --primary-white:#fff;
+}
+.container{
+    background-color: var(--primary-dark);
+}
+.container-fluid{
+    background-color: var(--primary-dark);
+}
+/*nav
+*/
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-start;
+    padding: 24px 0 0 20px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+nav .logo-main img{
+    width: 120px;
+    height: auto;
+}
+.nav-links-block-top{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-start;
+}
+.nav-links-block-bottom{
+    position: absolute;
+    bottom: 110px;
+}
+.nav-links-block-top .nav-link{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.nav-link i{
+    color: rgba(255, 255, 255, 0.71);
+    font-size: 26px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.71);
+}
+.nav-links-block-top .nav-links-block-first{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-links-block-top .nav-links-block-second{
+    margin-bottom: 10px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-links-block-top .nav-links-block-third{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.527);
+    border-top: 1px solid rgba(255, 255, 255, 0.532);
+    padding-top: 20px;
+    margin-top: 6px;
+    min-width: 140px;
+}
+.nav-links-block-top .nav-links-block-third a{
+    font-size: 12px;
+}
+.nav-links-block-bottom a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.546);
+}
+.nav-links-block-bottom i{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.546);
+}
+.nav-links-block-bottom .nav-link-install-app{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+/*
+nav ends*/
+/*main-body
+*/
+#dashboard-main{
+    background-color: var(--primary);
+}
+#dashboard-main header .container-fluid,
+#dashboard-main section .container-fluid{
+    background-color: var(--primary);
+}
+/*
+header*/
+header{
+    padding: 30px 40px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgba(1, 1, 1, 0.562);
+    backdrop-filter: blur(5px);
+}
+header .navigate-btn{
+    border: none;
+    background-color: transparent;
+    margin-left:6px;
+}
+header .navigate-btn i{
+    color: rgba(255, 255, 255, 0.667);
+    font-size: 24px;
+}
+header .right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+header .right-section .upgrade-btn{
+    padding: 4px 14px;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 18px;
+    color: white;
+    background-color: transparent;
+}
+header .right-section .profile-option{
+    font-size: 12px;
+    padding: 4px 14px;
+    border: none;
+    color: white;
+    background-color: var(--primary-dark);
+}
+header .right-section i{
+    color: rgba(255, 255, 255, 0.502);
+    font-size: 28px;
+    font-weight: lighter;
+}
+header .right-section span{
+    display: none;
+}
+/* header ends
+*/
+/* 
+section-1*/
+.recent-section .heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 20px 0;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.audio-card img{
+    width: 140px;
+    border-radius: 6px;
+}
+.audio-card{
+    padding: 20px 20px;
+    color: white;
+    width: 180px;
+    border: none;
+    border-radius: 14px;
+}
+.audio-card:hover{
+    background-color: #363636;
+}
+.audio-card .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.audio-card .content .audio-details{
+    display: flex;
+    flex-direction: column;
+}
+.audio-details .audio-name{
+    font-size: 16px;
+    color: white;
+}
+.audio-details .audio-desc{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.701);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#dashboard-main section .header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 18px 0;
+}
+section .heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold
+}
+#dashboard-main section .header button{
+    padding: 4px 12px 4px 12px;
+    font-size: 12px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 18px;
+    background-color: transparent;
+
+}
+/*
+main ---*/
+/*
+audio-control section
+*/
+.audio-section-main{
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #16161d;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.audio-section-main span{
+    color: rgba(255, 255, 255, 0.705);
+}
+.audio-section-main .audio-controls-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 140px;
+}
+.audio-section-main .audio-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+.audio-section-main .track-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+    font-size: 10px;
+}
+.audio-section-main .audio-controls span{
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(73, 73, 73, 0.509);
+}
+.audio-section-main .audio-controls span i{
+    font-size: 16px;
+}
+.audio-section-main .audio-controls span #pauseAndPlay{
+    font-size: 30px;
+}
+.audio-section-main .track-panel input[type="range"]{
+    width: 380px;
+    height: 2px;
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.516);
+}
+.audio-section-main .track-panel input[type="range"]::-webkit-slider-thumb{
+    width: 14px;
+    height: 14px;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 21px;
+    background-color: rgba(255, 255, 255, 0.831);
+}
+.right-audio-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2px;
+}
+.right-audio-controls span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4pc 8px;
+}
+.right-audio-controls .volume-tracker{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.right-audio-controls span i{
+    color: rgba(255, 255, 255, 0.708);
+    font-size: 18px;
+}
+.right-audio-controls .volume-tracker input[type="range"]{
+    width: 80px;
+    height: 2px;
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.683);
+}
+.right-audio-controls .volume-tracker input[type="range"]::-webkit-slider-thumb{
+    width: 12px;
+    height: 12px;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 21px;
+    background-color: rgba(0, 179, 39, 0.831);
+}
+/*audio controls ends
+*/
+
+/*responsive-----
+*/
+
+/*------------ 
+medium devices*/
+@media only screen and (max-width:992px){
+    nav .logo-main{
+        display: none;
+    }
+    .nav-links-block-top .nav-link a{
+        display: none;
+    }
+    .nav-links-block-top .nav-links-block-first{
+        margin-bottom: 0;
+        gap: 26px;
+    }
+    .nav-links-block-top .nav-links-block-second{
+        margin-top: 26px;
+        gap: 26px;
+    }
+    .nav-links-block-top .nav-links-block-third{
+        display: none;
+    }
+    .nav-links-block-bottom a{
+        display: none;
+    }
+}
+/* 
+small devices ---*/
+@media only screen and (max-width:768px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        left: 0;
+        background-color: rgba(1, 1, 1, 0.763);
+        backdrop-filter: blur(2px);
+        align-items: center;
+        justify-content: center;
+    }
+    nav .nav-links-block-top{
+        position: fixed;
+        bottom: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .nav-links-block-top .nav-link i{
+        font-size: 20px;
+    }
+    nav .nav-links-block-top .nav-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.114);
+        padding: 6px 6px;
+        border: none;
+        border-radius: 21px;
+    }
+    nav .nav-links-block-top .nav-links-block-third,
+    .nav-links-block-bottom {
+        display: none;
+    }
+    nav .nav-links-block-top .nav-links-block-first{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        gap: 34px;
+    }
+    nav .nav-links-block-top .nav-links-block-second{
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 34px;
+        gap: 34px;
+    }
+    .audio-section-main{
+        display: none;
+    }
+    header{
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        padding: 20px 40px 14px 30px;
+    }
+    header .navigate-btn{
+        display: none;
+    }
+    header .right-section i,
+    header .right-section .upgrade-btn,
+    header .right-section .profile-option{
+        display: none;
+    }
+    header .right-section span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.936);
+        background-color: rgba(255, 255, 255, 0.176);
+        border: none;
+        border-radius: 21px;
+        padding: 4px 4px;
+    }
+    header .right-section span i{
+        display: block;
+    }
+}
